@@ -1,0 +1,129 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="RENTAL PS YUNNA"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textViewConsole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="10dp"
+        android:text="PlayStation:"
+        android:textSize="18sp" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupConsole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewConsole"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonPS5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PS5" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPS4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PS4"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPS3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PS3"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPSVR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PSVR"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/textViewFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambahan Makanan:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/radioGroupConsole"/>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewFood"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonIndomie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indomie " />
+
+        <RadioButton
+            android:id="@+id/indomie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mie ayam"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSomay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Somay"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp" />
+
+
+    </RadioGroup>
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupFood"
+        android:layout_marginTop="20dp"
+        android:hint="Waktu Bermain " />
+
+    <Button
+        android:id="@+id/buttonpesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTime"
+        android:layout_centerHorizontal="true"
+        android:text="Pesan" />
+
+
+
+
+</RelativeLayout>
